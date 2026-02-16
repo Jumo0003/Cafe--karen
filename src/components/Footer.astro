@@ -1,45 +1,108 @@
 ---
 ---
 <footer>
-<h3>
+    <section class="grid-1-1-1-1">
+        <div>
+    <h3>
     Kontakt
 </h3>
 <p>
     Karens Minde Kulturhus
+</br>
     Wagnersvej 19
+    </br>
     2450 København SV
+    </br>
 </p>
 <ul>
-    <li><p>- Kort</p></li>
-    <li><p>- Find medarbejder</p></li>
-    <li><p>- Privatpoltik</p></li>
+    <li><p>→ Kort</p></li>
+    <li><p>→ Find medarbejder</p></li>
+    <li><p>→ Privatpoltik</p></li>
 </ul>
-
+ </div>
+ <div>
 <h3>
     Karens Minde er også
 </h3>
 <ul>
-    <li><p>- Sydhavnens biblotek</p></li>
-    <li><p>- Børnekulturstedet</p></li>
-    <li><p>- Sydhavn Teater</p></li>
-     <li><p>- Børnenes Dyremark</p></li>
-    <li><p>- Kgs. Enghave Lokalhistoriske Arkiv</p></li>
-    <li><p>- Kongens Enghave Lokaludvalg</p></li>
+    <li><p>→ Sydhavnens biblotek</p></li>
+    <li><p>→ Børnekulturstedet</p></li>
+    <li><p>→ Sydhavn Teater</p></li>
+     <li><p>→ Børnenes Dyremark</p></li>
+    <li><p>→ Kgs. Enghave Lokalhistoriske Arkiv</p></li>
+    <li><p>→ Kongens Enghave Lokaludvalg</p></li>
 </ul>
+</div>
+<div>
 
 <h3>
     Nyhedsbrev
 </h3>
 <ul>
-    <li><p>- Tilmeld dig her</p></li></ul>
+    <li><p>→ Tilmeld dig her</p></li></ul>
+</div>
 
+<div>
     <h3>
-    Kontakt
+    Bliv frivilig
 </h3>
 <p>
     Hele husets eksistens hviler på frivilliges indsats.
 </p>
 <ul>
-    <li><p>- Se hvordan du bliver en del af os!</p></li>
+    <li><p>→ Se hvordan du bliver en del af os!</p></li>
 </ul>
+</div>
+
+<div>
+<ul>
+    <li><img src="src/Images/insta.png" alt="instagram"></li>
+    <li><img src="src/Images/facebook.png" alt="facebook"></li>
+    <li><img src="src/Images/sog.png" alt="søg"></li>
+     <li><img src="src/Images/mail.png" alt="mail"></li>
+</ul>
+</div>
+</section>
 </footer>
+
+
+
+<style>
+.grid-1-1-1-1 {
+    display: flex;
+    gap: 165px;
+    margin: 80px;
+    border-top: 1px solid var(--color-tekstfarve);
+}
+
+ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+li p:hover{
+    color: var(--color-hover);
+}
+
+
+li img {
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+li img:hover{
+    color: var(--color-hover);
+}
+
+h3{
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+p{
+   font-size: 0.6rem;
+   margin-top: 2px;
+}
+
+</style>
