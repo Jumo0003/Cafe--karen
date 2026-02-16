@@ -1,0 +1,55 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-baggrund);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************** Farver ******************/
+:root {
+  --color-baggrund: #54203a;
+  --color-tekstfarve: #c09fa0;
+  --color-hover: #e05e7b;
+  --color-grøn: #4e4e33;
+}
+
+/************* Fonts ***************/
+h1 {
+  font-family: "Proto Grotesk", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--color-tekstfarve);
+}
+
+h2 {
+  font-family: "Proto Grotesk", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--color-tekstfarve);
+}
+
+h3 {
+  font-family: "Proto Grotesk", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--color-tekstfarve);
+}
+
+p {
+  font-family: "Proto Grotesk", sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  color: var(--color-tekstfarve);
+}
+
+h1:hover {
+  font-weight: bold;
+  color: var(--color-hover);
+}
