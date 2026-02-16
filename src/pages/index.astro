@@ -1,48 +1,43 @@
 ---
-import MainLayou from "../layouts/MainLayou.astro"
-import Desktopbilled from "../components/Desktopbilled-1.astro"
-import Footer from "../components/Footer.astro"
-import tesktfeltside1 from "../components/tekstfeltside1.astro"
-import Header from "../components/Header.astro"
-import Desktopbilled1 from "../components/Desktopbilled-1.astro"
-import Tekstfeltside1 from "../components/tekstfeltside1.astro"
-import Menukort from "../components/Menukort.astro"
+import MainLayou from "../layouts/MainLayou.astro";
+import Desktopbilled from "../components/Desktopbilled-1.astro";
+import Footer from "../components/Footer.astro";
+import tesktfeltside1 from "../components/tekstfeltside1.astro";
+import Header from "../components/Header.astro";
+import Desktopbilled1 from "../components/Desktopbilled-1.astro";
+import Tekstfeltside1 from "../components/tekstfeltside1.astro";
+import Menukort from "../components/Menukort.astro";
 ---
- <html lang="da">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="src/styles/global.css">
+
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/global.css" />
     <title>Café Karen</title>
- </head>
+  </head>
 
- <body>
+  <body>
+    <header>
+      <h1>HER TESTER JEG HEADER</h1>
+    </header>
 
-<header>
-    <h1>HER TESTER JEG HEADER</h1>
-</header>
+    <main>
+      <h1>HER TESTER JEG DESKTOP 1</h1>
 
-<main>
-<h1>HER TESTER JEG DESKTOP 1</h1>
+      <h1>HER TESTER JEG DESKTOP 2+3</h1>
 
-<h1>HER TESTER JEG DESKTOP 2+3</h1>
+      <h1>HER TESTER JEG DESKTOP 4</h1>
+      <Desktopbilled1 img="src/Images/folkspiserudenfor.jfif" />
 
-<h1>HER TESTER JEG DESKTOP 4</h1>
-</main>
-
-<footer>
-    <h1>HER TESTER JEG FOOTER</h1>
-</footer>
-<Desktopbilled1 img="src/Images/folkspiserudenfor.jfif"/>
-
-<Tekstfeltside1 title="Café Karen, Hvem er vi?" textfield="Vores Café er placeret i karens minde kulturhus 
+      <Tekstfeltside1 title="Café Karen, Hvem er vi?" textfield="Vores Café er placeret i karens minde kulturhus 
 og det kan man mærke ved de folk som kommer her, alt fra børnefamilier,
  studerende og gamle aktivister til stamkunder og de mange andre,
-  bydes hjerteligt velkommen i vores hyggelige rammer."/>
+  bydes hjerteligt velkommen i vores hyggelige rammer." />
 
-  <Desktopbilled1 img="src/Images/folkspiserindenforblaa.jfif"/>
+      <Desktopbilled1 img="src/Images/folkspiserindenforblaa.jfif" />
 
-  <Tekstfeltside1 title="Åbningstider" textfield="Åbningstider: 
+      <Tekstfeltside1 title="Åbningstider" textfield="Åbningstider: 
 
 Mandag: 12-16 (kun kaffe åbent) 
 Tirsdag: 12-17
@@ -51,16 +46,18 @@ Torsdag: 12-20
 Fredag: 12-16
 Lørdag: Lukket 
 Søndag: Lukket
-"/>
+" />
 
-<Menukort/>
+      <Menukort />
+    </main>
 
+    <footer>
+      <h1>HER TESTER JEG FOOTER</h1>
+    </footer>
 
     <h1>TEST 1</h1>
-<h2>Test 2</h2>
-<h3>Test 3</h3>
-<p>Test p</p>
- </body>
- </html>
-
- 
+    <h2>Test 2</h2>
+    <h3>Test 3</h3>
+    <p>Test p</p>
+  </body>
+</html>
