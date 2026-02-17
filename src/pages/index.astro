@@ -1,5 +1,5 @@
 ---
-import MainLayou from "../layouts/MainLayou.astro";
+import "../styles/global.css";
 import Desktopbilled from "../components/Desktopbilled-1.astro";
 import Footer from "../components/Footer.astro";
 import tesktfeltside1 from "../components/tekstfeltside1.astro";
@@ -13,7 +13,6 @@ import Menukort from "../components/Menukort.astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/global.css" />
     <title>Café Karen</title>
   </head>
 
@@ -25,6 +24,76 @@ import Menukort from "../components/Menukort.astro";
     <main>
       <h1>HER TESTER JEG DESKTOP 1</h1>
 
+      <div class="grid">
+      <img src="/Images/folkspiserudenfor.jfif" class="billed1" alt="billed">
+<article class="tekst1">
+      <h2>Café Karen, Hvem er vi?</h2>
+      <p>Vores Café er placeret i karens minde kulturhus 
+og det kan man mærke ved de folk som kommer her, alt fra børnefamilier,
+ studerende og gamle aktivister til stamkunder og de mange andre,
+  bydes hjerteligt velkommen i vores hyggelige rammer.</p>
+</article>
+
+<img src="/Images/kop_kande 1.png" class="Doodle1" alt="doodle 1">
+
+<article class="tekst2">
+      <h2>Åbningstider</h2>
+      <ul>
+        <li>Mandag: 12-16 (kun kaffe åbent) </li>
+        <li>Tirsdag: 12-17</li>
+        <li>Onsdag: 12-20</li>
+        <li>Torsdag: 12-20</li>
+        <li>Fredag: 12-16</li>
+        <li>Lørdag: Lukket </li>
+        <li>Søndag: Lukket</li>
+
+      </ul>
+</article>
+
+<img src="src/Images/stage 1.png" class="Doodle2" alt="doodle 2">
+
+      <img src="src/Images/folkspiserindenforblaa.jfif"  class="billed2" alt="billed">
+</div>
+      <style>
+        .grid{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows:  repeat(6, 1fr);
+        }
+
+        .billed1{
+            grid-column: span 6;
+            grid-row: span 3;
+           
+        }
+
+        .tekst1{
+            grid-column: span 4/12;
+            grid-row: 2/4;
+           }
+
+           .Doodle1{
+            position: absolute;
+            z-index: 2;
+            left: 10%;
+           }
+      
+
+        .tekst2{
+            grid-column: span 4/6;
+            grid-row:  5/6;
+        }
+
+    
+        
+        .billed2{
+            grid-column: span 6/13;
+            grid-row: span 3;
+        }
+
+      </style>
+<!-- 
       <h1>HER TESTER JEG DESKTOP 2+3</h1>
 
       <h1>HER TESTER JEG DESKTOP 4</h1>
@@ -61,3 +130,4 @@ Søndag: Lukket
     <p>Test p</p>
   </body>
 </html>
+-->
