@@ -33,6 +33,7 @@ h2 {
   font-weight: bold;
   font-style: normal;
   color: var(--color-tekstfarve);
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -52,4 +53,9 @@ p {
 h1:hover {
   font-weight: bold;
   color: var(--color-hover);
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
 }

@@ -17,13 +17,30 @@ import Menukort from "../components/Menukort.astro";
   </head>
 
   <body>
-    <header>
-      <h1>HER TESTER JEG HEADER</h1>
+      <header class="header">
+<nav class="nav">
+    <h1>ARRANGEMENTER</h1>
+    <h1>CAFÉ KAREN</h1>
+    <h1>UDLEJLING</h1>
+    <h1>OM HUSET</h1>
+</nav>
+</header>
+    <style>
+    .header{
+        background-color: 54203A;
+        padding: 20px 40px;
+    }
+
+    .nav{
+display:flex;
+gap:130px;
+margin: 10px;
+padding: 10px;
+    }
+</style>
     </header>
 
     <main>
-      <h1>HER TESTER JEG DESKTOP 1</h1>
-
       <div class="grid">
       <img src="/Images/folkspiserudenfor.jfif" class="billed1" alt="billed">
 <article class="tekst1">
@@ -39,13 +56,13 @@ og det kan man mærke ved de folk som kommer her, alt fra børnefamilier,
 <article class="tekst2">
       <h2>Åbningstider</h2>
       <ul>
-        <li>Mandag: 12-16 (kun kaffe åbent) </li>
-        <li>Tirsdag: 12-17</li>
-        <li>Onsdag: 12-20</li>
-        <li>Torsdag: 12-20</li>
-        <li>Fredag: 12-16</li>
-        <li>Lørdag: Lukket </li>
-        <li>Søndag: Lukket</li>
+        <li> <p>Mandag: 12-16 (kun kaffe åbent)</p></li>
+        <li> <p>Tirsdag: 12-17</p></li>
+        <li> <p>Onsdag: 12-20</p></li>
+        <li><p>Torsdag: 12-20</p></li>
+        <li><p>Fredag: 12-16</p></li>
+        <li><p>Lørdag: Lukket</p></li>
+        <li><p>Søndag: Lukket</p></li>
 
       </ul>
 </article>
@@ -59,13 +76,13 @@ og det kan man mærke ved de folk som kommer her, alt fra børnefamilier,
             display: grid;
             gap: 10px;
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows:  repeat(6, 1fr);
+            margin: 30px;
         }
 
         .billed1{
             grid-column: span 6;
             grid-row: span 3;
-           
+           border: 5px solid var(--color-grøn);
         }
 
         .tekst1{
@@ -78,50 +95,235 @@ og det kan man mærke ved de folk som kommer her, alt fra børnefamilier,
             grid-column: span 4/6;
             grid-row:  5/6;
         }
-
-    
         
         .billed2{
             grid-column: span 6/13;
             grid-row: span 3;
+            border: 5px solid var(--color-grøn);
         }
 
       </style>
-<!-- 
-      <h1>HER TESTER JEG DESKTOP 2+3</h1>
 
-      <h1>HER TESTER JEG DESKTOP 4</h1>
-      <Desktopbilled1 img="src/Images/folkspiserudenfor.jfif" />
+      <article class="grid-1-1">
+        <div>
+  <img src="public/Images/plakat1.webp" alt="plakat" />
+ </div>
+  <div>
+  <img src="public/Images/madbillede.png" alt="Blandet_billeder" />
+  </div>
+  </article>
 
-      <Tekstfeltside1 title="Café Karen, Hvem er vi?" textfield="Vores Café er placeret i karens minde kulturhus 
-og det kan man mærke ved de folk som kommer her, alt fra børnefamilier,
- studerende og gamle aktivister til stamkunder og de mange andre,
-  bydes hjerteligt velkommen i vores hyggelige rammer." />
+  <article class="grid-1-1">
+    <div>
+  <img src="public/Images/plakat2.webp" alt="plakat" />
+  </div>
+  <div class="filosofi">
+  <h2>Vores køkken filosofi</h2>
+  <p>
+    I vores køkken har vi en stor kærlighed til håndværket, og laver alt fra bunden, med gode råvarer som sikrer en høj kvalitet.</p>
+    <p> I vores køkken drager vi inspiration fra både det globale og det klassiske danske køkken.</p>
+    <p>Ingredienserne består så vidt muligt af gode økologiske råvarer, nogenlunde 80% af vores ingredienser, det er med til at sørge for den gode smag og de flotte anretninger, oftest komponeret af vores kok Simon.</p>
+    <p>Fordi vi fokusere på økologi og sæsonbaserede råvarer har vi et mindre udvalg af mad, som varierer fra uge til uge, så kom forbi og se hvad vi serverer eller check vores instagram hvor vores opdaterende menu altid står klar:)
+  </p>
+  </div>
+</article>
 
-      <Desktopbilled1 img="src/Images/folkspiserindenforblaa.jfif" />
+<style>
+  .grid-1-1 {
+    display: flex;
+    gap: 100px;
+    margin: 40px;
+    padding: 20px;
+    align-items: center;
+  }
 
-      <Tekstfeltside1 title="Åbningstider" textfield="Åbningstider: 
+   .grid-1-1 img{
+    width: 600px;
+  }
 
-Mandag: 12-16 (kun kaffe åbent) 
-Tirsdag: 12-17
-Onsdag: 12-20
-Torsdag: 12-20
-Fredag: 12-16
-Lørdag: Lukket 
-Søndag: Lukket
-" />
+.filosofi p{
+  padding: 5px;
+}
+</style>
 
-      <Menukort />
+     <section class="flex">
+  <div>
+<h2>
+    Fællesspisning
+</h2>
+
+<p>
+    Vi har fællesspisning hver torsdag her i Café Karen.
+</p>
+
+<p>
+    Voksne: 105 kr
+</br>
+Børn: 50 kr (op til 12 år)
+</p>
+
+<p>
+    Billetter købes her: https://billetto.dk/users/karens-minde-kulturhus
+</p>
+
+<p>
+    Maden serveres kl 18.00 og dagens menu bliver serveret af vores dejlige personale.
+</p>
+
+<p>
+    Der er altid et vegetarisk alternativ hvis du kontakter køkkenet på forhånd.
+</p>
+
+<p>
+  Menu for fællesspisning 12. februar:
+</br>
+Karens Coq au vin. Serveres med kartoffel/rodfrugt mos og hjemmebagt madbrød.
+</p>
+
+<p class="gavekort">
+Gavekort:
+</br>
+Giv en Sydhavns-oplevelse til en ven. Køb et gavekort til Café Karen. Gavekortet kan købes ved personligt fremmøde i caféen.
+</p>
+</div>
+<div class="billeder">
+<img class="spisning" src="public/Images/spisning.webp" alt="spisning">
+<img class="maps" src="public/Images/maps.webp" alt="maps">
+</div>
+</section>
+
+<style>
+.flex {
+    display: flex;
+    margin: 70px;
+    gap: 50px;
+    justify-content: center;
+}
+p{
+    margin-top: 20px;
+}
+
+.spisning {
+    width: 700px;
+}
+
+.maps {
+    width: 450px;
+    margin-top: 30px;
+}
+
+.billeder {
+    place-items: center;
+}
+
+.gavekort {
+    margin-top: 200px;
+}
+
+</style>
+
     </main>
 
     <footer>
-      <h1>HER TESTER JEG FOOTER</h1>
-    </footer>
+    <section class="grid-1-1-1-1">
+        <div>
+    <h3>
+    Kontakt
+</h3>
+<p>
+    Karens Minde Kulturhus
+</br>
+    Wagnersvej 19
+    </br>
+    2450 København SV
+    </br>
+</p>
+<ul>
+    <li><p>→ Kort</p></li>
+    <li><p>→ Find medarbejder</p></li>
+    <li><p>→ Privatpoltik</p></li>
+</ul>
+ </div>
+ <div>
+<h3>
+    Karens Minde er også
+</h3>
+<ul>
+    <li><p>→ Sydhavnens biblotek</p></li>
+    <li><p>→ Børnekulturstedet</p></li>
+    <li><p>→ Sydhavn Teater</p></li>
+     <li><p>→ Børnenes Dyremark</p></li>
+    <li><p>→ Kgs. Enghave Lokalhistoriske Arkiv</p></li>
+    <li><p>→ Kongens Enghave Lokaludvalg</p></li>
+</ul>
+</div>
+<div>
 
-    <h1>TEST 1</h1>
-    <h2>Test 2</h2>
-    <h3>Test 3</h3>
-    <p>Test p</p>
+<h3>
+    Nyhedsbrev
+</h3>
+<ul>
+    <li><p>→ Tilmeld dig her</p></li></ul>
+</div>
+
+<div>
+    <h3>
+    Bliv frivilig
+</h3>
+<p>
+    Hele husets eksistens hviler på frivilliges indsats.
+</p>
+<ul>
+    <li><p>→ Se hvordan du bliver en del af os!</p></li>
+</ul>
+</div>
+
+<div>
+<ul>
+    <li><img src="public/Images/insta.png" alt="instagram"></li>
+    <li><img src="public/Images/facebook.png" alt="facebook"></li>
+    <li><img src="public/Images/sog.png" alt="søg"></li>
+     <li><img src="public/Images/mail.png" alt="mail"></li>
+</ul>
+</div>
+</section>
+</footer>
+
+
+
+<style>
+.grid-1-1-1-1 {
+    display: flex;
+    gap: 165px;
+    margin: 80px;
+    border-top: 1px solid var(--color-tekstfarve);
+}
+
+.grid-1-1-1-1 li p:hover{
+    color: var(--color-hover);
+}
+
+
+.grid-1-1-1-1 li img {
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.grid-1-1-1-1 li img:hover{
+    color: var(--color-hover);
+}
+
+.grid-1-1-1-1 h3{
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.grid-1-1-1-1 p{
+   font-size: 0.6rem;
+   margin-top: 2px;
+}
+</style>
+
   </body>
 </html>
--->
